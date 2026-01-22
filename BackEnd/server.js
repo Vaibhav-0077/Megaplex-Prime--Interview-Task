@@ -16,20 +16,13 @@ app.use(express.json());
 app.post("/api/login", (req, res) => {
   const { username, password } = req.body;
 
-  console.log("LOGIN BODY:", req.body);
-
-  // ✅ allow ANY non-empty credentials
   if (!username || !password) {
-    return res.status(400).json({
-      message: "Username and password required",
-    });
+    return res.status(400).json({ message: "Required" });
   }
 
-  return res.status(200).json({
+  res.json({
     token: "dummy-token",
-    user: {
-      username: username,
-    },
+    user: { username }
   });
 });
 
