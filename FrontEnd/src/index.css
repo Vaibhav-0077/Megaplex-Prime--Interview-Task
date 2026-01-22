@@ -6,10 +6,19 @@ body { font-family: Arial; background:#f4f6f8; }
   background: white;
   border-radius: 8px;
 }
-input, button {
+input {
+  width: 93%;
+  margin: 8px 0;
+  padding: 10px;
+}
+
+button {
   width: 100%;
   margin: 8px 0;
   padding: 10px;
+  background-color: rgb(145, 255, 145);
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 .dashboard .grid {
   display: grid;
