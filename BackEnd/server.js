@@ -5,7 +5,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:5173" , "https://YOUR-FRONTEND-URL.onrender.com"],
+    origin: ["https://megaplex-prime-interview-task-978j.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
